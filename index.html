@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="min-h-screen py-10 bg-cover bg-center bg-no-repeat bg-fixed"
+    style="
+      background-image: url(&quot;https://images.unsplash.com/photo-1571847490051-491c12ff6540?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80&quot;);
+    "
+  >
+    <div class="container mx-auto max-w-4xl space-y-6">
+      <!-- Bài 1-->
+      <div class="bg-white p-6 rounded-lg border border-gray-300 space-y-4">
+        <h1 class="text-xl font-bold">BÀI 1: Tính tiền lương nhân viên</h1>
+        <div class="flex flex-wrap gap-4">
+          <input
+            id="luongMotNgay"
+            type="number"
+            placeholder="Nhập lương 1 ngày"
+            class="border border-gray-300 rounded p-2"
+          />
+          <input
+            id="soNgayLamViec"
+            type="number"
+            placeholder="Nhập số ngày làm việc"
+            class="border border-gray-300 rounded p-2"
+          />
+        </div>
+        <button
+          id="btnTinhLuong"
+          class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600"
+        >
+          Tính lương
+        </button>
+        <p id="pThongBao" class="font-bold text-green-600"></p>
+      </div>
+      <!-- Bài 2-->
+      <div class="bg-white p-6 rounded-lg border border-gray-300 space-y-4">
+        <h1 class="text-xl font-bold">BÀI 2: Tính giá trị trung bình</h1>
+        <div class="flex flex-wrap gap-3">
+          <input
+            id="number1"
+            type="number"
+            placeholder="Số thứ 1"
+            class="border border-gray-300 rounded p-2"
+          />
+          <input
+            id="number2"
+            type="number"
+            placeholder="Số thứ 2"
+            class="border border-gray-300 rounded p-2"
+          />
+          <input
+            id="number3"
+            type="number"
+            placeholder="Số thứ 3"
+            class="border border-gray-300 rounded p-2"
+          />
+          <input
+            id="number4"
+            type="number"
+            placeholder="Số thứ 4"
+            class="border border-gray-300 rounded p-2"
+          />
+          <input
+            id="number5"
+            type="number"
+            placeholder="Số thứ 5"
+            class="border border-gray-300 rounded p-2"
+          />
+        </div>
+        <button
+          id="btnTinhTB"
+          class="bg-emerald-500 text-white font-bold py-2 px-4 rounded hover:bg-emerald-600"
+        >
+          Tính trung bình
+        </button>
+        <p id="pTB" class="font-bold text-green-600"></p>
+      </div>
+      <!-- Bài 3-->
+      <div class="bg-white p-6 rounded-lg border border-gray-300 space-y-4">
+        <h1 class="text-xl font-bold">BÀI 3: Quy đổi tiền</h1>
+        <div>
+          <input
+            id="tienUSD"
+            type="number"
+            placeholder="Nhập số tiền USD cần đổi"
+            class="border border-gray-300 rounded p-2"
+          />
+        </div>
+        <button
+          id="btnDoiTien"
+          class="bg-amber-500 text-white font-bold py-2 px-4 rounded hover:bg-amber-600"
+        >
+          Quy đổi tiền
+        </button>
+        <p id="pDoiTien" class="font-bold text-green-600"></p>
+      </div>
+
+      <!-- Bài 4-->
+      <div class="bg-white p-6 rounded-lg border border-gray-300 space-y-4">
+        <h1 class="text-xl font-bold">
+          BÀI 4: Tính diện tích, chu vi hình chữ nhật
+        </h1>
+        <div class="flex flex-wrap gap-4">
+          <input
+            id="chieuDai"
+            type="number"
+            placeholder="Nhập chiều dài"
+            class="border border-gray-300 rounded p-2"
+          />
+          <input
+            id="chieuRong"
+            type="number"
+            placeholder="Nhập chiều rộng"
+            class="border border-gray-300 rounded p-2"
+          />
+        </div>
+        <button
+          id="btnTinh"
+          class="bg-purple-500 text-white font-bold py-2 px-4 rounded hover:bg-purple-600"
+        >
+          Tính
+        </button>
+        <p id="pHCN" class="font-bold text-green-600"></p>
+      </div>
+      <!-- Bài 5-->
+      <div class="bg-white p-6 rounded-lg border border-gray-300 space-y-4">
+        <h1 class="text-xl font-bold">BÀI 5: Tính tổng 2 ký số</h1>
+        <div>
+          <input
+            id="soN"
+            type="number"
+            placeholder="Nhập số có 2 chữ số"
+            class="border border-gray-300 rounded p-2"
+          />
+        </div>
+        <button
+          id="btnKySo"
+          class="bg-rose-500 text-white font-bold py-2 px-4 rounded hover:bg-rose-600"
+        >
+          Tính tổng
+        </button>
+        <p id="pKySo" class="font-bold text-green-600"></p>
+      </div>
+    </div>
+    <script src="./js/bai1.js"></script>
+    <script src="./js/bai2.js"></script>
+    <script src="./js/bai3.js"></script>
+    <script src="./js/bai4.js"></script>
+    <script src="./js/bai5.js"></script>
+  </body>
+</html>
